@@ -8,4 +8,5 @@ data class PlaceResponse(val status:String,val places:List<Place>)
 //定义的目的是为了建立映射联系
 data class Place(val name:String,val location:Location,@SerializedName("formatted_address") val address:String)
 
+//定义地址信息
 data class Location(val lng:String,val lat:String)
